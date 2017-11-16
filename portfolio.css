@@ -1,17 +1,53 @@
 
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.body, html {
+    height: 100%;
+}
+
+.menu {
+  font-family: 'Inconsolata', monospace;
+  font-size: 50px;
+  font-weight: bold;
+}
+.parallax {
+    /* The image used */
+    background-image: url("./public/rainbow.jpeg");
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.intro .what {
+  font-family: 'Inconsolata', monospace;
+  font-size: 25px;
+  background-color: white;
+  width:auto;
+}
 
 .flex-container {
   display: flex;
+  padding: 0;
+  margin: 0;
   background-color: White;
   justify-content: center;
-
 }
 
 .flex-container>div {
   background-color: #f1f1f1;
-  margin: 10px;
-  padding:20px;
-  font-size: 30px;
+  width: 100%;
+  height: auto;
 }
 
 .flex-container2 {
@@ -22,7 +58,4 @@
 
 .flex-container2>div {
   background-color: #f1f1f1;
-  margin: 10px;
-  padding:20px;
-  font-size: 30px;
 }
